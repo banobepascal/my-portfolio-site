@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
     <div class="container navbar">
@@ -128,9 +129,9 @@
     <div class="container work" id="work">
       <h1>work</h1>
       <div class="work-category">
-        <button class="designing" id="active">Web Designing</button>
-        <button id="animation">Web Animation</button>
-        <button id="project">React Projects</button>
+        <button class="designing" id="active" onclick="showRequiredCategory(this)">Web Designing</button>
+        <button id="animation" onclick="showRequiredCategory(this)">Web Animation</button>
+        <button id="project" onclick="showRequiredCategory(this)">React Projects</button>
       </div>
       <div class="category-designing showCategory">
         <a href=""><img src="img/1.png"/></a>
@@ -139,12 +140,12 @@
         <a href=""><img src="img/2.png"/></a>
         <a href=""><img src="img/3.png"/></a>
       </div>
-      <div class="category-designing hideCategory">
+      <div class="category-animation hideCategory">
         <a href=""><img src="img/1.png"/></a>
         <a href=""><img src="img/2.png"/></a>
         <a href=""><img src="img/3.png"/></a>
       </div>
-      <div class="category-designing hideCategory">
+      <div class="category-project hideCategory">
         <a href=""><img src="img/1.png"/></a>
         <a href=""><img src="img/2.png"/></a>
         <a href=""><img src="img/3.png"/></a>
@@ -176,5 +177,7 @@
       <hr />
       <p>2019 Copyright. All Rights Reserved</p>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
