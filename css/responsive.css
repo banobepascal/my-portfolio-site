@@ -1,0 +1,211 @@
+/* if the viewport is equal to 1910px or less than that */
+@media only screen and (max-width: 1910px) {
+  .header_area .main-menu .navbar {
+    padding: 1rem;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+  .site-main .brand-area,
+  .site-main .services-area .services-title,
+  .site-main .about-area {
+    padding: 3% 4%;
+  }
+  
+}
+
+@media only screen and (max-width: 1080px) {
+  .site-main .brand-area .experience-area .bg-panel {
+    margin-left: 20%;
+    width: 100%;
+    height: 250px;
+  }
+
+  .site-main .brand-area .first-row {
+    margin-top: 30%;
+  }
+
+  .site-main .project-area .button-group button {
+    padding: 0 2em;
+  }
+
+  .site-main .project-area .button-group button + button {
+    padding: 0 2em;
+  }
+}
+
+/* if the viewport is equal to 800px or less than that */
+@media only screen and (max-width: 900px) {
+  .site-main .about-area .about-title h2 > span {
+    font-size: 31px;
+    letter-spacing: 10px;
+  }
+
+  .brand-area .skills-e {
+    font-size: 31px;
+    letter-spacing: 10px;
+    margin-bottom: 2.5em;
+    margin-top: -1.5em;
+  }
+
+  .site-main .about-area .about-image {
+    display: none;
+  }
+
+  .site-main .brand-area .experience-area .years-area {
+    padding-left: 1%;
+    width: 49%;
+  }
+
+  .site-main .brand-area .experience-area .bg-panel {
+    margin-top: -10%;
+    left: -20%;
+    background: none;
+  }
+
+  .site-main .brand-area .first-row {
+    display: none;
+  }
+
+  .site-main .brand-area .experience-area .call-area {
+    padding-left: 3%;
+  }
+
+  .site-main .project-area .button-group button {
+    font: normal 500 18px/40px var(--roboto);
+    font-size: 1em;
+    padding: 0 2em;
+  }
+
+  .site-main .about-area .about-title p {
+    padding: 0%;
+  }
+
+  .site-main .project-area .button-group button + button {
+    padding: 0 2em;
+  }
+
+  .site-main .project-area {
+    margin-top: 9em;
+  }
+
+  .site-main .project-area .project-title .title-h1{
+    font-size: 2em;
+  }
+}
+
+/* if the viewport is equal to 400px or less than that */
+@media only screen and (max-width: 680px) {
+  .header_area .main-menu .navbar,
+  .header_area .main-menu .navbar .navbar-brand,
+  .site-main .subscribe-us-area .subscribe .subscribe-title,
+  .site-main .subscribe-us-area .subscribe .subscribe-title p,
+  h4,
+  .site-main .services-area,
+  .site-main .subscribe-us-area .subscribe {
+    padding: 2%;
+    margin: 0%;
+  }
+
+  .site-main > .services-area .services {
+    width: 13rem;
+  }
+
+  .brand-area .skills-e {
+    margin-top: -1em;
+    font-size: 31px;
+    letter-spacing: 10px;
+  }
+
+  .site-main .brand-area .experience-area .bg-panel {
+    padding: 1em;
+    width: 100%;
+    height: 300px;
+  }
+
+  .site-main .brand-area .experience-area .bg-panel:first-child {
+    margin-top: -6em;
+    margin-bottom: 1em;
+  }
+
+  .site-main .project-area {
+    margin-top: 10em;
+  }
+
+  .site-main .project-area .project-title .title-h1 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+
+  .site-main .project-area .button-group {
+    margin-top: -2em;
+  }
+
+  .site-main .project-area .button-group button {
+    padding: 0 1em;
+  }
+
+  .site-main .project-area .button-group button + button {
+    padding: 0 1.2em;
+  }
+
+}
+
+/* if the viewport is equal to 400px or less than that */
+@media only screen and (max-width: 470px) {
+  .header_area .main-menu .navbar,
+  .header_area .main-menu .navbar .navbar-brand,
+  .site-main .subscribe-us-area .subscribe .subscribe-title,
+  .site-main .subscribe-us-area .subscribe .subscribe-title p,
+  h4,
+  .site-main .services-area,
+  .site-main .subscribe-us-area .subscribe {
+    padding: 2%;
+    margin: 0%;
+  }
+
+  .site-main > .services-area .services {
+    width: 13rem;
+  }
+
+  .brand-area .skills-e {
+    margin-top: -1em;
+    font-size: 31px;
+    letter-spacing: 10px;
+  }
+
+  .site-main .brand-area .experience-area .bg-panel {
+    padding: 1em;
+    width: 100%;
+    height: 400px;
+  }
+
+  .site-main .brand-area .experience-area .bg-panel:first-child {
+    margin-top: -6em;
+    margin-bottom: 1em;
+  }
+
+  .site-main .project-area {
+    margin-top: 17em;
+  }
+
+  .site-main .project-area .project-title .title-h1 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+
+  .site-main .project-area .button-group {
+    margin-top: -2em;
+  }
+
+  .site-main .project-area .button-group button {
+    padding: 0 1em;
+  }
+
+  .site-main .project-area .button-group button + button {
+    padding: 0 1.2em;
+  }
+
+}
