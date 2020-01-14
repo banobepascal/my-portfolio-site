@@ -13,7 +13,6 @@
   .site-main .about-area {
     padding: 3% 4%;
   }
-  
 }
 
 @media only screen and (max-width: 1080px) {
@@ -41,6 +40,11 @@
   .site-main .about-area .about-title h2 > span {
     font-size: 31px;
     letter-spacing: 10px;
+    margin-top: -4em;
+  }
+
+  .site-main .about-area .about-title .paragraph {
+    margin-top: -8%;
   }
 
   .brand-area .skills-e {
@@ -69,10 +73,6 @@
     display: none;
   }
 
-  .site-main .brand-area .experience-area .call-area {
-    padding-left: 3%;
-  }
-
   .site-main .project-area .button-group button {
     font: normal 500 18px/40px var(--roboto);
     font-size: 1em;
@@ -91,26 +91,17 @@
     margin-top: 9em;
   }
 
-  .site-main .project-area .project-title .title-h1{
-    font-size: 2em;
+  .site-main .project-area .project-title .title-h1 {
+    font-size: 1.8em;
   }
 }
 
 /* if the viewport is equal to 400px or less than that */
 @media only screen and (max-width: 680px) {
   .header_area .main-menu .navbar,
-  .header_area .main-menu .navbar .navbar-brand,
-  .site-main .subscribe-us-area .subscribe .subscribe-title,
-  .site-main .subscribe-us-area .subscribe .subscribe-title p,
-  h4,
-  .site-main .services-area,
-  .site-main .subscribe-us-area .subscribe {
+  .header_area .main-menu .navbar .navbar-brand {
     padding: 2%;
     margin: 0%;
-  }
-
-  .site-main > .services-area .services {
-    width: 13rem;
   }
 
   .brand-area .skills-e {
@@ -135,7 +126,7 @@
   }
 
   .site-main .project-area .project-title .title-h1 {
-    font-size: 1.8rem;
+    font-size: 3rem;
     letter-spacing: 2px;
   }
 
@@ -150,32 +141,10 @@
   .site-main .project-area .button-group button + button {
     padding: 0 1.2em;
   }
-
 }
 
 /* if the viewport is equal to 400px or less than that */
 @media only screen and (max-width: 470px) {
-  .header_area .main-menu .navbar,
-  .header_area .main-menu .navbar .navbar-brand,
-  .site-main .subscribe-us-area .subscribe .subscribe-title,
-  .site-main .subscribe-us-area .subscribe .subscribe-title p,
-  h4,
-  .site-main .services-area,
-  .site-main .subscribe-us-area .subscribe {
-    padding: 2%;
-    margin: 0%;
-  }
-
-  .site-main > .services-area .services {
-    width: 13rem;
-  }
-
-  .brand-area .skills-e {
-    margin-top: -1em;
-    font-size: 31px;
-    letter-spacing: 10px;
-  }
-
   .site-main .brand-area .experience-area .bg-panel {
     padding: 1em;
     width: 100%;
@@ -196,16 +165,31 @@
     letter-spacing: 2px;
   }
 
-  .site-main .project-area .button-group {
-    margin-top: -2em;
-  }
-
   .site-main .project-area .button-group button {
     padding: 0 1em;
   }
 
   .site-main .project-area .button-group button + button {
     padding: 0 1.2em;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 348px) {
+  .site-main .brand-area .experience-area .bg-panel {
+    height: 450px;
   }
 
+  .site-main .project-area {
+    margin-top: 20em;
+  }
+
+  .site-main .project-area .project-title .title-h1 {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+  }
+
+  .site-main .project-area .button-group button + button {
+    padding: 0 0.5em;
+  }
 }

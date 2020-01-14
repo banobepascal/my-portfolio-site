@@ -42,40 +42,6 @@ header {
 /* end navigation */
 
 /* Banner Area */
-.site-main .site-buttons button,
-.site-main .about-area .about-title button {
-  padding: 12px 25px;
-  background-color: none;
-  border: 3px solid #ed5565;
-  color: #ed5565;
-  letter-spacing: 2px;
-  overflow: hidden;
-  transition: 0.5s;
-}
-
-.site-main .site-buttons button:hover,
-.site-main .about-area .about-title button:hover {
-  color: #fff;
-}
-
-.site-main .site-buttons button::before,
-.site-main .about-area .about-title button::before {
-  content: "";
-  background-color: #ed5565;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  width: 100%;
-  height: 0%;
-  z-index: -1;
-  transition: 0.5s;
-}
-
-.site-main .site-buttons button:hover::before,
-.site-main .about-area .about-title button:hover::before {
-  height: 100%;
-}
 
 .site-main .site-banner .site-title h3 {
   padding-top: 20%;
@@ -191,20 +157,6 @@ header {
   box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.25);
 }
 
-.site-main .brand-area .experience-area .years-area .years {
-  font: normal bold 84px/40px var(--roboto);
-  color: var(--primary-color2);
-  z-index: 2;
-}
-
-.site-main .brand-area .experience-area .years-area h2 > span {
-  font: normal 600 22px/30px var(--roboto);
-}
-
-.site-main .brand-area .experience-area .call-area {
-  padding-left: 10rem;
-}
-
 .site-main .brand-area .experience-area .bg-panel .tech-stack {
   color: #ed5565;
 }
@@ -236,6 +188,14 @@ header {
   border-radius: 50px;
   margin-bottom: 2em;
   padding: 0 1rem;
+}
+
+.site-main .project-area .button-group button:hover {
+  color: #fff;
+}
+
+.site-main .project-area .button-group button + button {
+  margin-left: 2em;
 }
 
 .site-main .project-area .button-group .active {
