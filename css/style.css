@@ -8,16 +8,30 @@
 @import url(./partials/_global.css);
 
 body {
-  background-color: #252627;
+  background-color: #002631;
   color: #fff;
 }
 
+.menu-icon {
+  width: 32px;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 44px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+} 
+
 /* start navigation */
 header {
-  background-color: #181818;
+  background-color: none ;
 }
 .header_area .main-menu .navbar .navbar-brand {
-  padding: 0 2rem 0 5rem;
+  padding: 0 2rem 0 4rem;
+  color: #fff;
+  font-weight: 700;
+  font-family: var(--ubuntu);
+  font-size: 2em;
 }
 
 .header_area .main-menu .navbar {
@@ -25,10 +39,10 @@ header {
 }
 
 .header_area .main-menu .nav-item .nav-link {
-  font: normal 500 15px/2px var(--roboto);
+  font: normal 500 15px/2px var(--ubuntu);
   text-transform: uppercase;
   padding: 1.7rem;
-  color: #707070;
+  color: #fff;
 }
 
 .header_area .main-menu .navbar-nav .active a {
@@ -37,6 +51,11 @@ header {
 
 .header_area .main-menu .navbar-nav a:hover {
   color: #ed5565;
+}
+
+.nav_color {
+  background-color: rgb(10, 18, 22);
+  color: aqua;
 }
 
 /* end navigation */
@@ -71,24 +90,29 @@ header {
   width: 90rem;
 }
 
+.site-main .site-buttons button {
+  margin-top: 2em;
+}
+
 /* End Banner Area */
 
 /* Start About Area */
 
 .site-main .about-area {
   padding: 8rem 5rem;
+  font-family: var(--ubuntu);
 }
 
 .site-main .about-area .about-title h2 > span {
   display: block;
-  font: normal bold 49px/ 60px var(--roboto);
+  font: normal bold 49px/ 60px var(--ubuntu);
   letter-spacing: 21px;
   opacity: 0.1;
 }
 
 .site-main .about-area .about-title .paragraph > p {
   padding: 0.4rem 0;
-  color: #bebebe;
+  color: rgb(224, 212, 212);
 }
 
 /* End About Area */
@@ -101,7 +125,7 @@ header {
 }
 
 .brand-area .skills-e {
-  font: normal bold 49px/ 60px var(--roboto);
+  font: normal bold 49px/ 60px var(--ubuntu);
   letter-spacing: 20px;
   padding: 3rem 1rem;
   opacity: 0.1;
@@ -133,16 +157,13 @@ header {
 }
 
 .site-main .brand-area .first-row .col-lg-4 > .single-brand:hover > img {
-  filter: brightness(0.15);
+  filter: brightness(2.15);
 }
 
 .site-main .brand-area .experience-area {
   padding-left: 1rem;
 }
 
-.site-main .brand-area .experience-area span {
-  display: block;
-}
 
 .site-main .brand-area .experience-area .bg-panel {
   position: absolute;
@@ -153,8 +174,9 @@ header {
   margin-left: 220px;
   z-index: -1;
   padding: 2em;
-  background-color: #252627;
+  background-color: #002631;
   box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.25);
+  font-family: var(--ubuntu);
 }
 
 .site-main .brand-area .experience-area .bg-panel .tech-stack {
@@ -162,7 +184,7 @@ header {
 }
 
 .site-main .brand-area .experience-area .bg-panel .para {
-  color: #bebebe;
+  color: rgb(224, 212, 212);
 }
 
 /* End Brand Area */
@@ -175,15 +197,15 @@ header {
 
 .site-main .project-area .project-title .title-h1 {
   opacity: 0.1;
-  font: normal bold 49px/ 60px var(--roboto);
+  font: normal bold 49px/ 60px var(--ubuntu);
   letter-spacing: 21px;
 }
 
 .site-main .project-area .button-group button {
   background: transparent;
-  font: normal 500 16px/40px var(--roboto);
+  font: normal 500 16px/40px var(--ubuntu);
   text-transform: uppercase;
-  color: #ed5565;
+  color: #bebebe;
   border: 3px solid #ed5565;
   border-radius: 50px;
   margin-bottom: 2em;
@@ -204,7 +226,7 @@ header {
 }
 
 .site-main .project-area .grid .our-project > .title h4 {
-  font: normal 700 25px/12px var(--roboto);
+  font: normal 700 25px/12px var(--ubuntu);
   color: #bebebe;
 }
 
@@ -220,11 +242,14 @@ header {
 /* Footer Area */
 
 footer.footer-area {
-  padding: 5rem 0;
+  padding-top: 0;
+  padding-bottom: 2rem;
+  background-color:  rgb(10, 18, 22); 
 }
 
 footer.footer-area .social h5 {
-  font: normal 500 23px/ 30px var(--roboto);
+  padding-top: 1em; 
+  font: normal 500 23px/ 30px var(--ubuntu);
 }
 
 footer.footer-area .social a > i {
@@ -241,6 +266,10 @@ footer.footer-area .copyrights i {
   color: #ed5565;
   font-size: 22px;
   /* padding: 2rem; */
+}
+
+footer.footer-area .copyrights .para {
+  color: rgb(224, 212, 212);
 }
 
 footer.footer-area .copyrights .name {

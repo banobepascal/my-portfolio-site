@@ -21,7 +21,8 @@
   color: #ed5565;
   letter-spacing: 2px;
   transition: 0.5s;
-  font: normal 500 16px/20px var(--roboto);
+  font: normal 500 16px/20px var(--ubuntu);
+  color: #bebebe;
 }
 
 .site-main .site-buttons button:hover,
@@ -50,11 +51,11 @@
 
 p.para{
     color: var(--text-color);
-    font: normal 500 16px/ 25px var(--roboto);
+    font: normal 500 16px/ 25px var(--ubuntu);
 }
 
 .font-roboto{
-    font-family: var(--roboto);
+    font-family: var(--ubuntu);
 }
 
 button:focus,
