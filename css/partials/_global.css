@@ -12,7 +12,8 @@
 
 /* Buttons */ 
 
-.site-main .site-buttons button,
+
+.site-main .site-buttons button a,
 .site-main .about-area .about-title button {
   padding: 12px 25px;
   background-color: none;
@@ -23,14 +24,16 @@
   transition: 0.5s;
   font: normal 500 16px/20px var(--ubuntu);
   color: #bebebe;
+  text-decoration: none;
+  border-radius: 3px;
 }
 
-.site-main .site-buttons button:hover,
+.site-main .site-buttons button a:hover,
 .site-main .about-area .about-title button:hover {
   color: #fff;
 }
 
-.site-main .site-buttons button::before,
+.site-main .site-buttons button a::before,
 .site-main .about-area .about-title button::before {
   content: "";
   background-color: #ed5565;
@@ -44,7 +47,7 @@
   transition: 0.5s;
 }
 
-.site-main .site-buttons button:hover::before,
+.site-main .site-buttons button a:hover::before,
 .site-main .about-area .about-title button:hover::before {
   height: 100%;
 }

@@ -20,11 +20,11 @@ body {
   cursor: pointer;
   color: #fff;
   display: none;
-} 
+}
 
 /* start navigation */
 header {
-  background-color: none ;
+  background-color: none;
 }
 .header_area .main-menu .navbar .navbar-brand {
   padding: 0 2rem 0 4rem;
@@ -55,6 +55,7 @@ header {
 
 .nav_color {
   background-color: rgb(10, 18, 22);
+  margin-bottom: 20em; 
   color: aqua;
 }
 
@@ -88,6 +89,7 @@ header {
 .site-main .site-banner .banner-image > img {
   padding: 7rem 0;
   width: 90rem;
+  margin-top: -2em;
 }
 
 .site-main .site-buttons button {
@@ -108,6 +110,7 @@ header {
   font: normal bold 49px/ 60px var(--ubuntu);
   letter-spacing: 21px;
   opacity: 0.1;
+  padding-top: 3rem 0;
 }
 
 .site-main .about-area .about-title .paragraph > p {
@@ -115,9 +118,12 @@ header {
   color: rgb(224, 212, 212);
 }
 
+.site-main .about-area .about-image {
+  margin-right: 2em;
+}
 /* End About Area */
 
-/* Start Brand Area */
+/* Start skills Area */
 
 .site-main .brand-area {
   padding: 1rem 20rem;
@@ -164,7 +170,6 @@ header {
   padding-left: 1rem;
 }
 
-
 .site-main .brand-area .experience-area .bg-panel {
   position: absolute;
   left: -190px;
@@ -187,7 +192,7 @@ header {
   color: rgb(224, 212, 212);
 }
 
-/* End Brand Area */
+/* End skills Area */
 
 /* Project Area */
 
@@ -229,7 +234,11 @@ header {
   font: normal 700 25px/12px var(--ubuntu);
   color: #bebebe;
 }
-
+.site-main .project-area .grid .our-project .img img {
+  border-radius: 5px;
+  height: 250px;
+  width: 100%;
+}
 .site-main .project-area .grid .our-project .img a:hover img {
   filter: brightness(0.8);
   transform: scale(1.1);
@@ -244,11 +253,11 @@ header {
 footer.footer-area {
   padding-top: 0;
   padding-bottom: 2rem;
-  background-color:  rgb(10, 18, 22); 
+  background-color: rgb(10, 18, 22);
 }
 
 footer.footer-area .social h5 {
-  padding-top: 1em; 
+  padding-top: 1em;
   font: normal 500 23px/ 30px var(--ubuntu);
 }
 
@@ -259,17 +268,20 @@ footer.footer-area .social a > i {
 }
 
 footer.footer-area .social a:hover > i {
-  color: var(--primary-color);
+  color: #09c;
 }
 
 footer.footer-area .copyrights i {
   color: #ed5565;
   font-size: 22px;
-  /* padding: 2rem; */
+}
+
+footer.footer-area .copyrights .connect {
+  color: #ed5565;
 }
 
 footer.footer-area .copyrights .para {
-  color: rgb(224, 212, 212);
+  color: #fff;
 }
 
 footer.footer-area .copyrights .name {

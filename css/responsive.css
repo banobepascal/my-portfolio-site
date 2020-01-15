@@ -9,7 +9,6 @@
   }
 
   .site-main .brand-area,
-  .site-main .services-area .services-title,
   .site-main .about-area {
     padding: 3% 4%;
   }
@@ -36,6 +35,12 @@
 
   .site-main .project-area .button-group button + button {
     padding: 0 2em;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .menu-icon {
+    display: block;
   }
 }
 
@@ -93,10 +98,6 @@
   .site-main .project-area .project-title .title-h1 {
     font-size: 1.8em;
   }
-
-  .menu-icon {
-    display: block;
-  }
 }
 
 /* if the viewport is equal to 400px or less than that */
@@ -147,7 +148,7 @@
 }
 
 /* if the viewport is equal to 470px or less than that */
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 480px) {
   .site-main .brand-area .experience-area .bg-panel {
     padding: 1em;
     width: 100%;
@@ -175,7 +176,7 @@
 }
 
 @media only screen and (max-width: 380px) {
-  .site-main .brand-area .experience-area .bg-panel{
+  .site-main .brand-area .experience-area .bg-panel {
     height: 450px;
   }
 
