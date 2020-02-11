@@ -8,9 +8,12 @@
     max-width: 90%;
   }
 
-  .site-main .brand-area,
-  .site-main .about-area {
+  .site-main .brand-area {
     padding: 3% 4%;
+  }
+
+  .site-main .about-area {
+    padding: 3% 2%;
   }
 }
 

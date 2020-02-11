@@ -101,8 +101,9 @@ header {
 /* Start About Area */
 
 .site-main .about-area {
-  padding: 8rem 5rem;
+  padding: 0 5rem;
   font-family: var(--ubuntu);
+  width: 100%;
 }
 
 .site-main .about-area .about-title h2 > span {
@@ -110,7 +111,13 @@ header {
   font: normal bold 49px/ 60px var(--ubuntu);
   letter-spacing: 21px;
   opacity: 0.1;
-  padding-top: 3rem 0;
+  padding: 1rem 4rem;
+}
+
+.site-main .about-area .about-title .paragraph {
+  margin-left: 4em;
+  color: rgb(224, 212, 212);
+  width: 80%;
 }
 
 .site-main .about-area .about-title .paragraph > p {
@@ -118,8 +125,9 @@ header {
   color: rgb(224, 212, 212);
 }
 
-.site-main .about-area .about-image {
-  margin-right: 2em;
+.site-main .about-area .about-title button{
+  margin-right: 10em;
+  float: right;
 }
 /* End About Area */
 
@@ -133,7 +141,7 @@ header {
 .brand-area .skills-e {
   font: normal bold 49px/ 60px var(--ubuntu);
   letter-spacing: 20px;
-  padding: 3rem 1rem;
+  padding: 3rem 2rem;
   opacity: 0.1;
 }
 
