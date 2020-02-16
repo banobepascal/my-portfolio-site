@@ -17,6 +17,7 @@
   }
 }
 
+/* if the viewport is equal to 1080px or less than that */
 @media only screen and (max-width: 1080px) {
   .header_area .main-menu .navbar .navbar-brand {
     padding: 0 2rem 0 2rem;
@@ -47,12 +48,13 @@
   }
 }
 
-/* if the viewport is equal to 800px or less than that */
+/* if the viewport is equal to 900px or less than that */
 @media only screen and (max-width: 900px) {
   .site-main .about-area .about-title h2 > span {
     font-size: 31px;
     letter-spacing: 10px;
     margin-top: -4em;
+    margin-left: -0.8em;
   }
 
   .site-main .about-area .about-title .paragraph {
@@ -64,10 +66,6 @@
     letter-spacing: 10px;
     margin-bottom: 2.5em;
     margin-top: -1.5em;
-  }
-
-  .site-main .about-area .about-image {
-    display: none;
   }
 
   .site-main .brand-area .experience-area .bg-panel {
@@ -103,7 +101,7 @@
   }
 }
 
-/* if the viewport is equal to 400px or less than that */
+/* if the viewport is equal to 680px or less than that */
 @media only screen and (max-width: 680px) {
   .header_area .main-menu .navbar,
   .header_area .main-menu .navbar .navbar-brand {
@@ -115,6 +113,17 @@
     margin-top: -1em;
     font-size: 31px;
     letter-spacing: 10px;
+  }
+
+  .site-main .about-area .about-title h2 > span  {
+    font-size: 31px;
+    letter-spacing: 10px;
+    margin-left: -0.1em;
+  }
+
+  .site-main .about-area {
+    width: 100%;
+    margin-left: -2em;
   }
 
   .site-main .brand-area .experience-area .bg-panel {
@@ -150,7 +159,7 @@
   }
 }
 
-/* if the viewport is equal to 470px or less than that */
+/* if the viewport is equal to 480px or less than that */
 @media only screen and (max-width: 480px) {
   .site-main .brand-area .experience-area .bg-panel {
     padding: 1em;
@@ -178,7 +187,13 @@
   }
 }
 
+/* if the viewport is equal to 380px or less than that */
 @media only screen and (max-width: 380px) {
+  .site-main .about-area .about-title h2 > span  {
+    font-size: 28px;
+    letter-spacing: 5px;
+  }
+
   .site-main .brand-area .experience-area .bg-panel {
     height: 450px;
   }
@@ -201,8 +216,19 @@
   }
 }
 
+/* if the viewport is equal to 320px or less than that */
 @media only screen and (max-width: 320px) {
+  .site-main .about-area .about-title h2 > span  {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+
+  .site-main .about-area {
+    width: 100%;
+    margin-left: -2.5em;
+  }
+
   .site-main .brand-area .experience-area .bg-panel {
-    height: 500px;
+    height: 550px;
   }
 }
