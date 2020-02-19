@@ -8,7 +8,7 @@
 @import url(./partials/_global.css);
 
 body {
-  background-color: #002631;
+  background-color: rgb(10, 18, 22);
   color: #fff;
 }
 
@@ -63,33 +63,47 @@ header {
 
 /* Banner Area */
 
-.site-main .site-banner .site-title h3 {
-  padding-top: 20%;
-  font-size: 2.5rem;
+.site-main .site-banner {
+ text-align: center;
+ height: 90vh;
+ background-color: #000;
 }
 
-.site-main .site-banner .site-title h1 {
+.site-main .site-banner  h3 {
+  padding-top: 10%;
+  position: relative;
+  font-size: 5.5rem;
+  font-weight: 600;
+}
+
+.site-main .site-banner h3::after {
+  position: absolute;
+  display: block;
+  content: "";
+  max-width: 350px;
+  width: 100%;
+  height: 12px;
+  background-color: #fd7878;
+  bottom: -10px;
+  left: 13px;
+}
+
+.site-main .site-banner h1 {
   font-size: 2.5rem;
   letter-spacing: 5px;
 }
 
-.site-main .site-banner .site-title span.name {
-  color: #ed5565;
+.site-main .site-banner span.name {
+  color: #fd7878;
 }
 
-.site-main .site-banner .site-title h4 {
+.site-main .site-banner h4 {
   font-size: 1.8rem;
 }
 
-.site-main .site-banner .site-title h4 p {
+.site-main .site-banner h4 p {
   font-size: 1rem;
   opacity: 0.6;
-}
-
-.site-main .site-banner .banner-image > img {
-  padding: 7rem 0;
-  width: 90rem;
-  margin-top: -2em;
 }
 
 .site-main .site-buttons button {
@@ -104,6 +118,7 @@ header {
   padding: 0 5rem;
   font-family: var(--ubuntu);
   width: 100%;
+  background-color: rgb(10, 18, 22);
 }
 
 .site-main .about-area .about-title h2 > span {
@@ -132,6 +147,7 @@ header {
 .site-main .brand-area {
   padding: 1rem 20rem;
   margin-bottom: 4rem;
+  background-color: #000;
 }
 
 .brand-area .skills-e {
@@ -193,7 +209,7 @@ header {
 }
 
 .site-main .brand-area .experience-area .bg-panel .para {
-  color: rgb(224, 212, 212);
+  color: #fff;
 }
 
 /* End skills Area */
@@ -201,7 +217,8 @@ header {
 /* Project Area */
 
 .site-main .project-area {
-  padding: 4rem 0;
+  padding: 0rem 0;
+  background-color: rgb(10, 18, 22);
 }
 
 .site-main .project-area .project-title .title-h1 {
@@ -257,7 +274,7 @@ header {
 footer.footer-area {
   padding-top: 0;
   padding-bottom: 2rem;
-  background-color: rgb(10, 18, 22);
+  background-color: #000;
 }
 
 footer.footer-area .social h5 {

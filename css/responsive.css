@@ -50,6 +50,10 @@
 
 /* if the viewport is equal to 900px or less than that */
 @media only screen and (max-width: 900px) {
+  .site-main .site-banner h3 {
+    padding-top: 2em;
+   }
+
   .site-main .about-area .about-title h2 > span {
     font-size: 31px;
     letter-spacing: 10px;
@@ -161,6 +165,10 @@
 
 /* if the viewport is equal to 480px or less than that */
 @media only screen and (max-width: 480px) {
+  .site-main .site-banner h3 {
+   font-size: 4.5rem;
+   }
+
   .site-main .brand-area .experience-area .bg-panel {
     padding: 1em;
     width: 100%;
@@ -189,6 +197,11 @@
 
 /* if the viewport is equal to 380px or less than that */
 @media only screen and (max-width: 380px) {
+  .site-main .site-banner h3 {
+    padding-top: 3em;
+    font-size: 3.5rem;
+    }
+
   .site-main .about-area .about-title h2 > span  {
     font-size: 28px;
     letter-spacing: 5px;
@@ -218,6 +231,10 @@
 
 /* if the viewport is equal to 320px or less than that */
 @media only screen and (max-width: 320px) {
+  .site-main .site-banner h3 {
+    font-size: 3rem;
+    }
+
   .site-main .about-area .about-title h2 > span  {
     font-size: 28px;
     letter-spacing: 2px;
