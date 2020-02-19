@@ -55,7 +55,7 @@ header {
 
 .nav_color {
   background-color: rgb(10, 18, 22);
-  margin-bottom: 20em; 
+  margin-bottom: 20em;
   color: aqua;
 }
 
@@ -64,33 +64,17 @@ header {
 /* Banner Area */
 
 .site-main .site-banner {
- text-align: center;
- height: 90vh;
- background-color: #000;
+  width: 100%;
+  text-align: center;
+  height: 90vh;
+  background-color: #000;
 }
 
-.site-main .site-banner  h3 {
+.site-main .site-banner h3 {
   padding-top: 10%;
   position: relative;
   font-size: 5.5rem;
   font-weight: 600;
-}
-
-.site-main .site-banner h3::after {
-  position: absolute;
-  display: block;
-  content: "";
-  max-width: 350px;
-  width: 100%;
-  height: 12px;
-  background-color: #fd7878;
-  bottom: -10px;
-  left: 13px;
-}
-
-.site-main .site-banner h1 {
-  font-size: 2.5rem;
-  letter-spacing: 5px;
 }
 
 .site-main .site-banner span.name {

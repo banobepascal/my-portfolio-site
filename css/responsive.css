@@ -249,3 +249,9 @@
     height: 550px;
   }
 }
+
+@media only screen and (max-width: 300px) {
+  .site-main .site-banner h3 {
+    font-size: 2rem;
+    }
+}
