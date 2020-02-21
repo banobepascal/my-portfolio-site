@@ -54,7 +54,7 @@ header {
 }
 
 .nav_color {
-  background-color: rgb(10, 18, 22);
+  background-color: #000;
   margin-bottom: 20em;
   color: aqua;
 }
@@ -67,7 +67,6 @@ header {
   width: 100%;
   text-align: center;
   height: 90vh;
-  background-color: #000;
 }
 
 .site-main .site-banner h3 {
@@ -131,7 +130,6 @@ header {
 .site-main .brand-area {
   padding: 1rem 20rem;
   margin-bottom: 4rem;
-  background-color: #000;
 }
 
 .brand-area .skills-e {
