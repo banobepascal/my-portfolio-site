@@ -237,6 +237,13 @@ header {
   font: normal 700 25px/12px var(--ubuntu);
   color: #bebebe;
 }
+
+.site-main .project-area .grid .our-project > .title h4 span.view-code {
+  font: normal 700 15px var(--ubuntu);
+  color: #ed5565;
+  float: right;
+}
+
 .site-main .project-area .grid .our-project .img img {
   border-radius: 5px;
   height: 250px;
