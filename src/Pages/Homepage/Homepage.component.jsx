@@ -19,28 +19,30 @@ const Homepage = () => {
         <MenuTags>contact</MenuTags>
       </MenuContainer>
       <TableContainer>
+      <tbody>
         <TableRow>
           <td>
             <a href="#">
-              <i class="fab fa-github"></i>
+              <i className="fab fa-github"></i>
             </a>
           </td>
           <td>
             <a href="#">
-              <i class="fab fa-linkedin"></i>
+              <i className="fab fa-linkedin"></i>
             </a>
           </td>
           <td>
             <a href="#">
-              <i class="fab fa-medium"></i>
+              <i className="fab fa-medium"></i>
             </a>
           </td>
           <td>
             <a href="#">
-              <i class="fab fa-twitter"></i>
+              <i className="fab fa-twitter"></i>
             </a>
           </td>
         </TableRow>
+        </tbody>
       </TableContainer>
     </HomepageContainer>
   );
