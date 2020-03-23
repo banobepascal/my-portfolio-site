@@ -12,16 +12,14 @@ const ContactPage = () => {
       <Headings>contact.</Headings>
       <section>
       <h2>contact me</h2>
-      <p>
         <form>
           <FormInput type="text" placeholder="name" required />
           <FormInput type="email" placeholder="email" required />
           <br />
           <FormTextArea placeholder="your message" required rows="5"></FormTextArea>
           <br />
-          <SendButton class="btn_one">send</SendButton>
+          <SendButton>send</SendButton>
         </form>
-        </p>
       </section>
     </Container>
   );
