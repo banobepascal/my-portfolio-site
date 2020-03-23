@@ -3,6 +3,7 @@ import React from "react";
 import Homepage from "./Pages/Homepage/Homepage.component";
 import AboutPage from "./Pages/About/About.component";
 import ContactPage from './Pages/Contact/Contact.component';
+import WorkPage from './Pages/Work/Work.component';
 
 import { AboutTag, WorkTag, ContactTag, FooterContainer } from "./App.styles";
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Homepage />
       <AboutPage />
       <ContactPage/>
+      <WorkPage/>
       <FooterContainer>
         <a href="#">Banobe Pascal</a>
       </FooterContainer>
