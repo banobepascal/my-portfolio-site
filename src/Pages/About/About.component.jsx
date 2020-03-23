@@ -1,15 +1,15 @@
 import React from "react";
 
 import {
-  AboutContainer,
+  Container,
   BackPointer,
   SectionContainer,
   Headings
-} from "./About.styles";
+} from "../container.styles";
 
 const AboutPage = () => {
   return (
-    <AboutContainer>
+    <Container>
       <BackPointer>
         <i className="fas fa-angle-left"></i>
       </BackPointer>
@@ -38,7 +38,7 @@ const AboutPage = () => {
           suite, Windows, Linux, Unix, bash
         </p>
       </SectionContainer>
-    </AboutContainer>
+    </Container>
   );
 };
 
