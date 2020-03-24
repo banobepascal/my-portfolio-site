@@ -1,16 +1,24 @@
 import React from "react";
+import $ from "jquery";
 
 import {
   Container,
+  Headings,
   BackPointer,
-  SectionContainer,
-  Headings
+  SectionContainer
 } from "../container.styles";
 
 const AboutPage = () => {
+  const closeAbout = () => {
+    $(".about_container").addClass("animated slideOutLeft");
+    setTimeout(function() {
+      $(".about_container").removeClass("animated slideOutLeft");
+      $(".about_container").css("display", "none");
+    }, 800);
+  };
   return (
-    <Container>
-      <BackPointer>
+    <Container className="about_container">
+      <BackPointer onClick={closeAbout}>
         <i className="fas fa-angle-left"></i>
       </BackPointer>
       <Headings>about me</Headings>
