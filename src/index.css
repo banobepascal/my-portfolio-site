@@ -11,3 +11,20 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+::-webkit-scrollbar {
+  width:5px;
+  height:5px;
+}
+::-webkit-scrollbar-track {
+  background: #fff; 
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 50, 50); 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 50, 50,0.8); 
+}
+::selection {
+color: #fff;
+background: rgb(255, 50, 50);
+}

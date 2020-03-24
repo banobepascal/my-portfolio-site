@@ -16,7 +16,7 @@ export const HomepageContainer = styled.div`
 `;
 
 export const NameHeading = styled.h1`
-  color: rgb(255, 50, 50);
+  color: #FF4040;
   font-size: 70px;
   font-weight: bold;
 `;

@@ -17,7 +17,7 @@ const tagStyles = css`
   border-radius: 0px 0px 100px 100px;
 
   &: hover {
-    background: rgba(255, 50, 50, 0.9);
+    background: #FF4040;
     cursor: pointer;
   }
 `;
@@ -56,7 +56,7 @@ export const FooterContainer = styled.div`
   font-weight: bold;
 
   a {
-    color: rgb(255, 50, 50);
+    color: #FF4040;
     text-decoration: none;
   }
 `;
