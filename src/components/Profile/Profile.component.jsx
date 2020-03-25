@@ -9,17 +9,21 @@ import {
   TableRow
 } from "./Profile.styles";
 
-const Profile = () => {
+const Profile = props => {
   return (
     <ProfileContainer className="animated slideInDown">
-    <Header/>
+      <Header
+        showAbout={props.showAbout}
+        showWork={props.showWork}
+        showContact={props.showContact}
+      />
       <NameHeading>Pascal</NameHeading>
       <h2>Fullstack / Javascript / Software developer </h2>
       <TableContainer>
         <tbody>
           <TableRow>
             <td className="animated zoomIn" style={{ animationDelay: "2.2s" }}>
-              <a href="#">
+              <a href="https://github.com/banobepascal">
                 <i className="fab fa-github"></i>
               </a>
             </td>

@@ -15,5 +15,6 @@ export const MenuTags = styled.a`
   margin: 0px 6%;
   font-size: 19px;
   color: #fff;
+  cursor: pointer;
 `;
 

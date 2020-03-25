@@ -2,14 +2,14 @@ import React from "react";
 
 import { MenuContainer, MenuTags } from "./Header.styles";
 
-const Homepage = () => {
+const Header = (props) => {
   return (
     <MenuContainer>
-      <MenuTags>about</MenuTags>
-      <MenuTags>work</MenuTags>
-      <MenuTags>contact</MenuTags>
+      <MenuTags onClick={props.showAbout}>about</MenuTags>
+      <MenuTags onClick={props.showWork}>work</MenuTags>
+      <MenuTags onClick={props.showContact}>contact</MenuTags>
     </MenuContainer>
   );
 };
 
-export default Homepage;
+export default Header;
