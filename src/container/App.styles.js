@@ -21,14 +21,19 @@ const tagStyles = css`
     background: #FF4040;
     cursor: pointer;
   }
+
+  @media screen and (max-width: 800px) {
+    display:none;
+  }
+
+  }
 `;
 
 export const AboutTag = styled.a`
   left: 0;
-
-  ${tagStyles}
   transform: rotate(-90deg);
 
+  ${tagStyles}
 `;
 
 export const WorkTag = styled.a`
@@ -60,5 +65,9 @@ export const FooterContainer = styled.div`
   a {
     color: #FF4040;
     text-decoration: none;
+  }
+
+  @media screen and (max-width: 800px) {
+    text-align:center;
   }
 `;

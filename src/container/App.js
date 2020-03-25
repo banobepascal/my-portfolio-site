@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import $ from "jquery";
 
-import Homepage from "../components/Homepage/Homepage.component";
+import Profile from "../components/Profile/Profile.component";
 import AboutPage from "../components/About/About.component";
 import ContactPage from "../components/Contact/Contact.component";
 import WorkPage from "../components/Work/Work.component";
@@ -57,7 +57,7 @@ class App extends Component {
         <ContactTag className="animated fadeIn" onClick={this.showContact}>
           contact
         </ContactTag>
-        <Homepage />
+        <Profile />
         <AboutPage />
         <ContactPage />
         <WorkPage />

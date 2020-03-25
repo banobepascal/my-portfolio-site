@@ -17,6 +17,10 @@ export const FormInput = styled.input`
     outline: none;
     border-bottom: 3px solid rgba(255, 255, 255, 1);
   }
+
+  @media screen and (max-width: 800px) {
+    width: 90%;
+  }
 `;
 
 export const FormTextArea = styled.textarea`
@@ -37,6 +41,10 @@ export const FormTextArea = styled.textarea`
   &:focus {
     outline: none;
     border-bottom: 3px solid rgba(255, 255, 255, 1);
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 90%;
   }
 `;
 
