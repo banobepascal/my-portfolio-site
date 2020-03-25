@@ -19,12 +19,12 @@ body {
   background: #fff; 
 }
 ::-webkit-scrollbar-thumb {
-  background: #ff4040; 
+  background: #9b9a9a; 
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff4040;; 
+  background: #9b9a9a; 
 }
 ::selection {
 color: #fff;
-background: #ff4040;;
+background: #9b9a9a;
 }
