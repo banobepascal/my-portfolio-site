@@ -15,6 +15,7 @@ const tagStyles = css`
   z-index: 4;
   transition: 0.4s ease-in-out;
   border-radius: 0px 0px 100px 100px;
+  animation-delay: 2.1s;
 
   &: hover {
     background: #FF4040;
@@ -24,9 +25,10 @@ const tagStyles = css`
 
 export const AboutTag = styled.a`
   left: 0;
-  transform: rotate(-90deg);
 
   ${tagStyles}
+  transform: rotate(-90deg);
+
 `;
 
 export const WorkTag = styled.a`

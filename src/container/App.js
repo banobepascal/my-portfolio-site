@@ -5,11 +5,11 @@ import Homepage from "../components/Homepage/Homepage.component";
 import AboutPage from "../components/About/About.component";
 import ContactPage from "../components/Contact/Contact.component";
 import WorkPage from "../components/Work/Work.component";
+import Loader from "../components/Spinner/Spinner.component";
 
 import { AboutTag, WorkTag, ContactTag, FooterContainer } from "./App.styles";
 
 class App extends Component {
-
   showAbout = () => {
     $(".about_container").css("display", "inherit");
     $(".about_container").addClass("animated slideInLeft");
@@ -34,12 +34,29 @@ class App extends Component {
     }, 800);
   };
 
+  componentDidMount() {
+    setTimeout(function() {
+      $(".loading").addClass("animated fadeOut");
+      setTimeout(function() {
+        $(".loading").removeClass("animated fadeOut");
+        $(".loading").css("display", "none");
+      }, 1000);
+    }, 1500);
+  }
+
   render() {
     return (
       <div>
-        <AboutTag onClick={this.showAbout}>about</AboutTag>
-        <WorkTag onClick={this.showWork}>work</WorkTag>
-        <ContactTag onClick={this.showContact}>contact</ContactTag>
+        <Loader />
+        <AboutTag className="animated fadeIn" onClick={this.showAbout}>
+          about
+        </AboutTag>
+        <WorkTag className="animated fadeIn" onClick={this.showWork}>
+          work
+        </WorkTag>
+        <ContactTag className="animated fadeIn" onClick={this.showContact}>
+          contact
+        </ContactTag>
         <Homepage />
         <AboutPage />
         <ContactPage />
