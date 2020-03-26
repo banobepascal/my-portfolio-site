@@ -20,25 +20,30 @@ class Homepage extends Component {
     showAboutPage: false,
     showContactPage: false,
     showWorkPage: false
-  }
+  };
 
   closePage = () => false;
 
   showAboutHandler = () => {
-   const showAbout = this.state.showAboutPage;
-   this.setState({ showAboutPage: !showAbout})
+    const showAbout = this.state.showAboutPage;
+    this.setState({ showAboutPage: !showAbout });
+  };
+
+  closeAboutHandler = () => {
+    const closeAbout = this.state.showAboutPage;
+    this.setState({ closeAboutPage: !closeAbout });
   };
 
   showContactHandler = () => {
     const showContact = this.state.showContactPage;
-    this.setState({ showContactPage: !showContact})
-   };
- 
-   showWorkHandler = () => {
+    this.setState({ showContactPage: !showContact });
+  };
+
+  showWorkHandler = () => {
     const showWork = this.state.showWorkPage;
-    this.setState({ showWorkPage: !showWork})
-   };
- 
+    this.setState({ showWorkPage: !showWork });
+  };
+
   componentDidMount() {
     setTimeout(function() {
       $(".loading").addClass("animated fadeOut");
@@ -55,27 +60,15 @@ class Homepage extends Component {
     let Work = null;
 
     if (this.state.showAboutPage) {
-      About = (
-        <AboutPage
-        showAboutPage={this.state.showAboutPage}
-        />
-      );
+      About = <AboutPage showAboutPage={this.state.showAboutPage} closeAbout={this.showAboutHandler} />;
     }
 
     if (this.state.showContactPage) {
-      Contact = (
-        <ContactPage
-        showContactPage={this.state.showContactPage}
-        />
-      );
+      Contact = <ContactPage showContactPage={this.state.showContactPage} />;
     }
 
     if (this.state.showWorkPage) {
-      Work = (
-        <WorkPage
-        showWorkPage={this.state.showWorkPage}
-        />
-      );
+      Work = <WorkPage showWorkPage={this.state.showWorkPage} />;
     }
     return (
       <div>

@@ -10,17 +10,28 @@ import {
 // import './About.styles.scss';
 
 const AboutPage = props => {
-  let aboutStyles = "";
+  let aboutClass = "";
   let slideInLeft = "animated slideInLeft";
   let slideOutLeft = "animated slideOutLeft";
 
   if (props.showAboutPage) {
-    aboutStyles = slideInLeft;
-  }
+    aboutClass = slideInLeft;
+  } setTimeout(() => {
+    console.log(aboutClass)
 
-  if (props.closePage) {
-    aboutStyles = slideOutLeft;
-  }
+    aboutClass = slideOutLeft;
+  }, 800)
+
+  // const closeAboutHandler = () => {
+  //   aboutClass = slideOutLeft;
+  // };
+
+  // if (aboutClass === slideInLeft){
+  //   aboutClass = "";
+  // }
+  // if (props.closeAbout) {
+  //   aboutStyles = slideOutLeft;
+  // }
   // if (props.showAboutPage) {
   //   return aboutStyles = slideOutLeft;
   // }
@@ -29,8 +40,8 @@ const AboutPage = props => {
   // };
 
   return (
-    <Container className={aboutStyles}>
-      <BackPointer onClick={props.closePage}>
+    <Container className={aboutClass}>
+      <BackPointer onClick={props.closeAbout}>
         <i className="fas fa-angle-left"></i>
       </BackPointer>
       <Headings>about me</Headings>
