@@ -6,18 +6,17 @@ import { ProjectsContainer, Projects } from "./Work.styles";
 
 const img = require("../../assets/grp3.jpg");
 
-const WorkPage = () => {
-  const closeWork = () => {
-    $(".work_container").addClass("animated slideOutRight");
-    setTimeout(function() {
-      $(".work_container").removeClass("animated slideOutRight");
-      $(".work_container").css("display", "none");
-    }, 800);
-  };
+const WorkPage = (props) => {
+  let workClass = "";
+  let slideInRight = "animated slideInRight";
+  let slideOutLeft = "animated slideOutLeft";
 
+  if (props.showWorkPage) {
+    workClass = slideInRight;
+  }
   return (
-    <Container className="work_container">
-      <BackPointer onClick={closeWork}>
+    <Container className={workClass}>
+      <BackPointer >
         <i className="fas fa-angle-right"></i>
       </BackPointer>
       <Headings>Projects</Headings>

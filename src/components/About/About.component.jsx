@@ -7,18 +7,30 @@ import {
   BackPointer,
   SectionContainer
 } from "../container.styles";
+// import './About.styles.scss';
 
-const AboutPage = () => {
-  const closeAbout = () => {
-    $(".about_container").addClass("animated slideOutLeft");
-    setTimeout(function() {
-      $(".about_container").removeClass("animated slideOutLeft");
-      $(".about_container").css("display", "none");
-    }, 800);
-  };
+const AboutPage = props => {
+  let aboutStyles = "";
+  let slideInLeft = "animated slideInLeft";
+  let slideOutLeft = "animated slideOutLeft";
+
+  if (props.showAboutPage) {
+    aboutStyles = slideInLeft;
+  }
+
+  if (props.closePage) {
+    aboutStyles = slideOutLeft;
+  }
+  // if (props.showAboutPage) {
+  //   return aboutStyles = slideOutLeft;
+  // }
+  // const getBadgeClasses = () => {
+  //   if(props.showAboutPage) return 'animated slideInLeft';
+  // };
+
   return (
-    <Container className="about_container">
-      <BackPointer onClick={closeAbout}>
+    <Container className={aboutStyles}>
+      <BackPointer onClick={props.closePage}>
         <i className="fas fa-angle-left"></i>
       </BackPointer>
       <Headings>about me</Headings>

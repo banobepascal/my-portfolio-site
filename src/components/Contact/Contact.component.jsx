@@ -4,18 +4,18 @@ import $ from 'jquery';
 import {Container, Headings, BackPointer} from '../container.styles';
 import {FormInput, FormTextArea, SendButton} from './Contact.styles';
 
-const ContactPage = () => {
-  const closeContact = () => {
-    $(".contact_container").addClass("animated slideOutDown");
-    setTimeout(function(){
-        $(".contact_container").removeClass("animated slideOutDown");
-        $(".contact_container").css("display","none");
-    },800);
+const ContactPage = (props) => {
+  let contactStyles = "";
+  let slideInUp = "animated slideInUp";
+  let slideOutLeft = "animated slideOutLeft";
+
+  if (props.showContactPage) {
+    contactStyles = slideInUp;
   }
 
   return (
-    <Container className='contact_container'>
-      <BackPointer onClick={closeContact}>
+    <Container className={contactStyles}>
+      <BackPointer >
         <i className="fas fa-angle-down"></i>
       </BackPointer>
       <Headings>contact.</Headings>

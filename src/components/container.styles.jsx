@@ -9,7 +9,6 @@ export const Container = styled.div`
   position: fixed;
   max-height: 100vh;
   overflow-y: auto;
-  display: none;
 `;
 
 export const BackPointer = styled.div`

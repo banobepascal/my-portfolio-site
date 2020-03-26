@@ -15,30 +15,30 @@ import {
 } from "./Homepage.styles";
 
 class Homepage extends Component {
-  showAboutHandler = () => {
-    $(".about_container").css("display", "inherit");
-    $(".about_container").addClass("animated slideInLeft");
-    setTimeout(() => {
-      $(".about_container").removeClass("animated slideInLeft");
-    }, 800);
-  };
+  state = {
+    isClicked: false,
+    showAboutPage: false,
+    showContactPage: false,
+    showWorkPage: false
+  }
 
-  showWorkHandler = () => {
-    $(".work_container").css("display", "inherit");
-    $(".work_container").addClass("animated slideInRight");
-    setTimeout(() => {
-      $(".work_container").removeClass("animated slideInRight");
-    }, 800);
+  closePage = () => false;
+
+  showAboutHandler = () => {
+   const showAbout = this.state.showAboutPage;
+   this.setState({ showAboutPage: !showAbout})
   };
 
   showContactHandler = () => {
-    $(".contact_container").css("display", "inherit");
-    $(".contact_container").addClass("animated slideInUp");
-    setTimeout(() => {
-      $(".contact_container").removeClass("animated slideInUp");
-    }, 800);
-  };
-
+    const showContact = this.state.showContactPage;
+    this.setState({ showContactPage: !showContact})
+   };
+ 
+   showWorkHandler = () => {
+    const showWork = this.state.showWorkPage;
+    this.setState({ showWorkPage: !showWork})
+   };
+ 
   componentDidMount() {
     setTimeout(function() {
       $(".loading").addClass("animated fadeOut");
@@ -50,6 +50,33 @@ class Homepage extends Component {
   }
 
   render() {
+    let About = null;
+    let Contact = null;
+    let Work = null;
+
+    if (this.state.showAboutPage) {
+      About = (
+        <AboutPage
+        showAboutPage={this.state.showAboutPage}
+        />
+      );
+    }
+
+    if (this.state.showContactPage) {
+      Contact = (
+        <ContactPage
+        showContactPage={this.state.showContactPage}
+        />
+      );
+    }
+
+    if (this.state.showWorkPage) {
+      Work = (
+        <WorkPage
+        showWorkPage={this.state.showWorkPage}
+        />
+      );
+    }
     return (
       <div>
         <Loader />
@@ -70,9 +97,11 @@ class Homepage extends Component {
           showWork={this.showWorkHandler}
           showContact={this.showContactHandler}
         />
-        <AboutPage />
-        <ContactPage />
-        <WorkPage />
+        {About}
+        {Contact}
+        {Work}
+        {/* <ContactPage showContactPage={this.state.showPage} /> */}
+        {/* <WorkPage /> */}
         <FooterContainer>
           <a href="https://github.com/banobepascal/">Banobe Pascal</a>
         </FooterContainer>
