@@ -19,22 +19,33 @@ class Homepage extends Component {
     isClicked: false,
     showAboutPage: false,
     showContactPage: false,
-    showWorkPage: false
+    showWorkPage: false,
+    classes: ""
   };
-
-  closeAbout = () => {
-    const closeAbout = this.state.isClicked;
-    this.setState({ isClicked: !closeAbout, showAboutPage: false });
-  }
 
   showAboutHandler = () => {
     const showAbout = this.state.showAboutPage;
-    this.setState({ showAboutPage: !showAbout , isClicked: true});
+    this.setState({
+      showAboutPage: !showAbout,
+      classes: "animated slideInLeft"
+    });
+  };
+
+  closeAbout = (e) => {
+    e.preventDefault();
+    this.setState({ showAboutPage: false, classes: "animated slideOutLeft" });
   };
 
   showContactHandler = () => {
     const showContact = this.state.showContactPage;
-    this.setState({ showContactPage: !showContact });
+    this.setState({
+      showContactPage: !showContact,
+      classes: "animated slideInUp"
+    });
+  };
+
+  closeContact = () => {
+    this.setState({ showContactPage: false, classes: "animated slideOutDown" });
   };
 
   showWorkHandler = () => {
@@ -61,14 +72,20 @@ class Homepage extends Component {
       About = (
         <AboutPage
           showAboutPage={this.state.showAboutPage}
-          clicked={this.state.isClicked}
+          classes={this.state.classes}
           closeAbout={this.closeAbout}
         />
       );
     }
 
     if (this.state.showContactPage) {
-      Contact = <ContactPage showContactPage={this.state.showContactPage} />;
+      Contact = (
+        <ContactPage
+          showContactPage={this.state.showContactPage}
+          classes={this.state.classes}
+          closeContact={this.closeContact}
+        />
+      );
     }
 
     if (this.state.showWorkPage) {

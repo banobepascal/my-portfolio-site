@@ -1,21 +1,12 @@
 import React from "react";
-import $ from 'jquery';
 
 import {Container, Headings, BackPointer} from '../container.styles';
 import {FormInput, FormTextArea, SendButton} from './Contact.styles';
 
-const ContactPage = (props) => {
-  let contactStyles = "";
-  let slideInUp = "animated slideInUp";
-  let slideOutLeft = "animated slideOutLeft";
-
-  if (props.showContactPage) {
-    contactStyles = slideInUp;
-  }
-
+const ContactPage = ({classes, closeContact}) => {
   return (
-    <Container className={contactStyles}>
-      <BackPointer >
+    <Container className={classes}>
+      <BackPointer onClick={closeContact}>
         <i className="fas fa-angle-down"></i>
       </BackPointer>
       <Headings>contact.</Headings>
