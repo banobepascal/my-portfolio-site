@@ -13,6 +13,7 @@ export const Container = styled.div`
 
 export const BackPointer = styled.div`
   font-size: 25px;
+  width: 4em;
   color: #fff;
   margin: 20px 0px;
   transition: 0.4s ease-in-out;

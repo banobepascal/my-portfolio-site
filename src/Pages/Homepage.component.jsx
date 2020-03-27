@@ -22,16 +22,14 @@ class Homepage extends Component {
     showWorkPage: false
   };
 
-  closePage = () => false;
+  closeAbout = () => {
+    const closeAbout = this.state.isClicked;
+    this.setState({ isClicked: !closeAbout, showAboutPage: false });
+  }
 
   showAboutHandler = () => {
     const showAbout = this.state.showAboutPage;
-    this.setState({ showAboutPage: !showAbout });
-  };
-
-  closeAboutHandler = () => {
-    const closeAbout = this.state.showAboutPage;
-    this.setState({ closeAboutPage: !closeAbout });
+    this.setState({ showAboutPage: !showAbout , isClicked: true});
   };
 
   showContactHandler = () => {
@@ -60,7 +58,13 @@ class Homepage extends Component {
     let Work = null;
 
     if (this.state.showAboutPage) {
-      About = <AboutPage showAboutPage={this.state.showAboutPage} closeAbout={this.showAboutHandler} />;
+      About = (
+        <AboutPage
+          showAboutPage={this.state.showAboutPage}
+          clicked={this.state.isClicked}
+          closeAbout={this.closeAbout}
+        />
+      );
     }
 
     if (this.state.showContactPage) {
