@@ -27,13 +27,11 @@ class Homepage extends Component {
     const showAbout = this.state.showAboutPage;
     this.setState({
       showAboutPage: !showAbout,
-      classes: "animated slideInLeft"
     });
   };
 
-  closeAbout = (e) => {
-    e.preventDefault();
-    this.setState({ showAboutPage: false, classes: "animated slideOutLeft" });
+  closeAbout = () => {
+    this.setState({ showAboutPage: false});
   };
 
   showContactHandler = () => {

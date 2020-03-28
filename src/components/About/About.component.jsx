@@ -1,4 +1,5 @@
 import React from "react";
+import classNames from 'classnames';
 
 import {
   Container,
@@ -7,7 +8,13 @@ import {
   SectionContainer
 } from "../container.styles";
 
-const AboutPage = ({ closeAbout, classes }) => {
+const AboutPage = (props) => {
+
+  const aboutClass = classNames({
+    "animated slideInLeft": props.showAboutPage,
+    "animated slideOutLeft": !props.showAboutPage
+  });
+
   // closeAbout = () => {
   //   const closeAbout = this.state.isClicked;
   //   this.setState({ isClicked: !closeAbout });
@@ -24,8 +31,8 @@ const AboutPage = ({ closeAbout, classes }) => {
   // };
 
   return (
-    <Container className={classes}>
-      <BackPointer onClick={closeAbout}>
+    <Container className={(props.showAboutPage) ? "animated slideInLeft": "animated slideOutLeft"}>
+      <BackPointer onClick={props.closeContact}>
         <i className="fas fa-angle-left"></i>
       </BackPointer>
       <Headings>about me</Headings>
