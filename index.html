@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Banobe Pascal</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa:700"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="loading">
+      <div id="spinner"></div>
+    </div>
+    <div class="desktop-menu">
+      <a
+        id="about"
+        onclick="showabout()"
+        class="animated fadeIn"
+        style="animation-delay:2.2s;"
+        >about</a
+      >
+      <a
+        id="work"
+        onclick="showwork()"
+        class="animated fadeIn"
+        style="animation-delay:2.2s;"
+        >works</a
+      >
+      <a
+        id="contact"
+        onclick="showcontact()"
+        class="animated fadeIn"
+        style="animation-delay:2.2s;"
+        >contact</a
+      >
+    </div>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+      <div id="menu">
+        <a onclick="showabout()">about</a>
+        <a onclick="showwork()">work</a>
+        <a onclick="showcontact()">contact</a>
+      </div>
+      <h1>Pascal</h1>
+      <h2>I'm a Fullstack Developer</h2>
+      <a href="#" class="btn_two">Resume</a>
+      <table>
+        <tr>
+          <td class="animated zoomIn" style="animation-delay:2.2s;">
+            <a class="social"><i class="fab fa-github"></i></a>
+          </td>
+          <td class="animated zoomIn" style="animation-delay:2.4s;">
+            <a class="social"><i class="fab fa-linkedin"></i></a>
+          </td>
+          <td class="animated zoomIn" style="animation-delay:2.6s;">
+            <a class="social"><i class="fab fa-medium"></i></a>
+          </td>
+          <td class="animated zoomIn" style="animation-delay:2.8s;">
+            <a class="social"><i class="fab fa-twitter"></i></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="work_container" class="container">
+      <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+      <h1>Projects</h1>
+      <section></section>
+    </div>
+    <div id="about_container" class="container">
+      <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+      <h1>about me</h1>
+      <section>
+        <p>
+          I am a self motivated and self taught software developer, with strong
+          work ethics. I am a well organized programmer with 1.5+ years of hands
+          on experience in web and software development, passionate about
+          Technology and driven to learn new skills plus adapting to the
+          different changes and patterns in the IT industry.
+        </p>
+        <p>
+          My primary goal is to use my expert problem solving and communication
+          skills to work with teams developing products and tools people love to
+          use, along with my strong personal knowledge and skills in software
+          development.
+        </p>
+      </section>
+      <h1>skills</h1>
+
+      <section>
+        <p>
+          i do eveything ;)
+        </p>
+      </section>
+    </div>
+    <div id="contact_container" class="container">
+      <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+      <h1>contact me</h1>
+      <section>
+        <form>
+          <input type="text" placeholder="name" required />
+          <input type="email" placeholder="email" required /><br />
+          <textarea placeholder="your message" required rows="5"></textarea
+          ><br />
+          <button class="btn_one">send</button>
+        </form>
+      </section>
+    </div>
+    <div id="footer">
+      <a href="#">Banobe Pascal</a>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>
