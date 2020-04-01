@@ -4,7 +4,7 @@ body {
   padding: 0px;
   margin: 0px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://i.ibb.co/pv7x1KG/bg-4.jpg") center center;
+    url("https://i.ibb.co/pv7x1KG/bg-4.jpg") no-repeat center center;
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -404,7 +404,7 @@ body {
   position: absolute;
   display: block;
   content: "";
-  width: 50.01%;
+  width: 50.009%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.9);
   top: 0;
@@ -450,13 +450,27 @@ body {
   opacity: 1;
 }
 
-.project-description a {
-  font-size: 1.4em;
-  color: #000;
+.project-description h6 ul {
+  text-align: center;
+margin-top: 1em;
+
+}
+
+.project-description h6 ul li{
+display: inline-block;
+}
+
+.project-description h6 ul li a {
+  font-size: 0.9rem;
+  color: #fd4b4b;
   font-weight: 100;
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   transition: all 0.8s;
+}
+
+.project-description h6 ul li a:hover {
+  text-decoration: underline;
 }
 
 #footer {
