@@ -1,2 +1,1 @@
-# Foster
-Foster - a free template
+# My Portfolio
