@@ -235,12 +235,12 @@ body {
 }
 
 .container h1 {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #fd4b4b;
   text-transform: uppercase;
 }
 .container p {
-  font-size: 21px;
+  font-size: 1.1rem;
 }
 
 .btn_two {
@@ -577,5 +577,13 @@ display: inline-block;
 
   .container section .projects {
     grid-template-columns: 1fr;
+  }
+
+  .container section ul {
+    padding-left: 0.5em ;
+  }
+
+  .container section ul li {
+    font-size: 2.5rem;
   }
 }
