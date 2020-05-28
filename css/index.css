@@ -4,7 +4,7 @@ body {
   padding: 0px;
   margin: 0px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://i.ibb.co/pv7x1KG/bg-4.jpg") no-repeat center center;
+    url("../img/bg-4.jpg") no-repeat center center;
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -452,12 +452,11 @@ body {
 
 .project-description h6 ul {
   text-align: center;
-margin-top: 1em;
-
+  margin-top: 1em;
 }
 
-.project-description h6 ul li{
-display: inline-block;
+.project-description h6 ul li {
+  display: inline-block;
 }
 
 .project-description h6 ul li a {
@@ -563,7 +562,9 @@ display: inline-block;
 
 @media (max-width: 500px) {
   body {
-    background: url("../img/bg3.jpg") no-repeat center center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/alexandru-acea--WBYxmW4yuw-unsplash.jpg") no-repeat center
+        center;
     background-size: cover;
   }
   #middle h1 {
@@ -580,7 +581,7 @@ display: inline-block;
   }
 
   .container section ul {
-    padding-left: 0.5em ;
+    padding-left: 0.5em;
   }
 
   .container section ul li {
