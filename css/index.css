@@ -562,6 +562,10 @@ display: inline-block;
 }
 
 @media (max-width: 500px) {
+  body {
+    background: url("../img/bg3.jpg") no-repeat center center;
+    background-size: cover;
+  }
   #middle h1 {
     font-size: 8vh;
   }
