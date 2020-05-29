@@ -68,7 +68,7 @@ body {
 #menu {
   width: 100%;
   text-align: center;
-  margin: 6vh 0px;
+  margin: 8vh 0px;
   display: none;
 }
 #menu a {
@@ -563,9 +563,14 @@ body {
 @media (max-width: 500px) {
   body {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../img/alexandru-acea--WBYxmW4yuw-unsplash.jpg") no-repeat center
+      url("../img/mobile-bg.jpg") no-repeat center
         center;
     background-size: cover;
+  }
+
+  #middle {
+    height: 80%;
+    justify-content: start;
   }
   #middle h1 {
     font-size: 8vh;
@@ -574,6 +579,10 @@ body {
   .container section p,
   #middle h2 {
     font-size: 1em;
+  }
+
+  .btn_two {
+    margin-top: 2em;
   }
 
   .container section .projects {
