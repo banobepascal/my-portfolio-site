@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Quicksand|Julius+Sans+One");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Quicksand|Julius+Sans+One|Nunito");
 
 body {
   padding: 0px;
@@ -439,7 +439,7 @@ body {
   font-size: 13px;
   color: #000;
   font-weight: 100;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito", sans-serif;
   transform: translateY(-20px);
   opacity: 0;
   transition: all 0.8s;
@@ -451,25 +451,23 @@ body {
 }
 
 .project-description h6 ul {
-  text-align: center;
   margin-top: 1em;
-}
-
-.project-description h6 ul li {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
 }
 
 .project-description h6 ul li a {
-  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
   color: #fd4b4b;
-  font-weight: 100;
-  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
   text-decoration: none;
   transition: all 0.8s;
 }
 
 .project-description h6 ul li a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 #footer {
@@ -483,6 +481,7 @@ body {
   font-size: 16px;
   font-weight: bold;
 }
+
 #footer a {
   color: #ff4040;
   text-decoration: none;
@@ -563,8 +562,7 @@ body {
 @media (max-width: 500px) {
   body {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../img/mobile-bg.jpg") no-repeat center
-        center;
+      url("../img/mobile-bg.jpg") no-repeat center center;
     background-size: cover;
   }
 
