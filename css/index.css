@@ -470,6 +470,11 @@ body {
   text-decoration: none;
 }
 
+#work_container .btn_two {
+ display: table;
+  margin: 0 auto;
+}
+
 #footer {
   color: #fff;
   width: 92vw;
