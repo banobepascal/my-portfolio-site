@@ -4,7 +4,7 @@ body {
   padding: 0px;
   margin: 0px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/bg-4.jpg") no-repeat center center;
+    url("../img/bg-4.webp") no-repeat center center;
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -567,7 +567,7 @@ body {
 @media (max-width: 500px) {
   body {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../img/mobile-bg.jpg") no-repeat center center;
+      url("../img/mobile-bg.webp") no-repeat center center;
     background-size: cover;
   }
 
