@@ -31,7 +31,7 @@ body {
   height: 150px;
   position: absolute;
   top: calc(50vh - 75px);
-  left: calc(50vw - 90px)
+  left: calc(50vw - 90px);
 }
 
 #spinner:before,
