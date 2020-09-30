@@ -45,7 +45,7 @@ body {
   top: 0;
   left: 0;
   animation: rotate 2s linear infinite;
-  opacity: 0;
+  opacity: 0
 }
 
 #spinner:before {
