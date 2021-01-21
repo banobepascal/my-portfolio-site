@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Quicksand|Julius+Sans+One");
-
 body {
   padding: 0px;
   margin: 0px;
@@ -96,9 +94,10 @@ body {
   text-transform: uppercase;
 }
 
-#middle h2 {
-  font-family: "Julius Sans One", sans-serif;
+#middle p {
+  font-family: "Josefin Sans", sans-serif;
   font-size: 1.5em;
+  text-transform: uppercase;
 }
 
 #middle button {
@@ -186,6 +185,7 @@ body {
   transition: 0.4s ease-in-out;
   margin: 0px 8px;
   text-align: center;
+  /* font-family: "Quicksand", sans-serif; */
 }
 .social:hover {
   cursor: pointer;
@@ -244,8 +244,8 @@ body {
 }
 
 .btn_two {
-  font-size: 1em;
-  font-family: "Julius Sans One", sans-serif;
+  font-size: 1.2em;
+  font-family: "Josefin Sans", sans-serif;
   background: #ff4040;
   padding: 10px 40px;
   border-radius: 80px;
@@ -567,7 +567,7 @@ body {
 @media (max-width: 500px) {
   body {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../img/mobile-bg.webp") no-repeat center center;
+      url("../img/bg-4.webp") no-repeat center center;
     background-size: cover;
   }
 
